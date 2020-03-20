@@ -69,8 +69,8 @@ var pickaxe = {
 };
 let drill = {
   purchased: 0,
-  cost: 50,
-  multiplierAdd: 0.5
+  cost: 150,
+  multiplierAdd: 1
 };
 let excavator = {
   purchased: 0,
