@@ -1,0 +1,77 @@
+.background {
+  background-image: url("https://papers.co/wallpaper/papers.co-nj27-starry-night-sky-space-night-dark-36-3840x2400-4k-wallpaper.jpg");
+  background-size: cover;
+  background-position: top;
+  min-height: 100vh;
+}
+h1 {
+  color: white;
+  font-size: 8em;
+  font-family: "Orbitron";
+}
+.card {
+  background-color: rgba(236, 236, 229, 0.239);
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.moon:active {
+  -webkit-filter: contrast(2);
+  filter: contrast(2);
+}
+.count-area {
+  height: auto;
+  background-color: rgba(255, 235, 205, 0.246);
+  justify-content: flex-end;
+  display: flex;
+}
+.count-area h4 {
+  float: right;
+}
+.cheese {
+  display: flex;
+  justify-content: center;
+}
+
+#cheese {
+  font-size: 9em;
+}

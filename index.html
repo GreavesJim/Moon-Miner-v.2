@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid background">
+      <div class="row d-flex ">
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#" onclick="buyPickaxe()">Pickaxe: <h4 id="pickaxeCost" disabled></h4> </a> 
+        <p>+1 Mine</p> <p id="pickaxeCount"></p>
+
+        <a href="#" onclick="buyDrill()">Drill: <h4 id="drillCost"></h4> </a>
+        <p class="pl-2">+3 Mine</p> <p class="pl-2" id="drillCount"></p>
+
+        <a href="#" onclick="buyExcavator()">Excavator: <h4 id="excavatorCost"></h4> </a>
+        <p class="pl-2">+1 Income</p> <p  class="pl-2" id="excavatorCount"></p>
+
+        <a href="#" onclick="buyCrew()">Mining Crew: <h4 id="crewCost"></h4> </a>
+        <p class="pl-2">+3 Income</p> <p class="pl-2" id="crewCount"></p>
+
+      </div>
+
+     
+      <span style="font-size:50px;cursor:pointer; color: white" onclick="openNav()" class="pl-2"
+        >&#9776; </span
+      >
+        <div class="col-12 d-flex  justify-content-center ">
+          <h1 class="title">Moon Miner</h1>
+        </div>
+        <div class="col-12 d-flex  justify-content-center ">
+          
+          <img
+            src="http://pngimg.com/uploads/moon/moon_PNG50.png"
+            style="cursor:pointer"
+            class="moon"
+            onclick="Mine()"
+          />
+        </div>
+        </div>
+        <div class="row count-area">
+          <div class="col-12 cheese"><h3 id="cheese"></h3>  </div>
+          <div class="col-6"><h4 id="multiplier"></h4> <h4 id="coundAdd"></h4><h4 id="perSec"></h4></div>
+         
+        </div>
+       
+    
+      
+      
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
